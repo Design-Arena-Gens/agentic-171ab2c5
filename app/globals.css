@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.container-px {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-sm ring-1 ring-gray-200;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium transition-colors;
+}
+.btn-primary {
+  @apply bg-brand-600 text-white hover:bg-brand-700;
+}
+.btn-outline {
+  @apply border border-gray-300 hover:bg-gray-50;
+}
+.input {
+  @apply rounded-lg border-gray-300 focus:border-brand-500 focus:ring-brand-500;
+}
+.badge {
+  @apply inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ring-1 ring-inset ring-gray-200;
+}
+.status-queued { @apply bg-yellow-50 text-yellow-800 ring-yellow-200; }
+.status-preparing { @apply bg-blue-50 text-blue-800 ring-blue-200; }
+.status-ready { @apply bg-emerald-50 text-emerald-800 ring-emerald-200; }
+.status-served { @apply bg-gray-100 text-gray-700 ring-gray-200; }
